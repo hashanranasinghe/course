@@ -1,4 +1,4 @@
-import 'package:course_ui_components/screens/signup_screen.dart';
+import 'package:course_ui_components/screens/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: "Inter",
       ),
-      home:SignUpScreen(),
+      home:OnBoardingPage(),
     );
   }
 }

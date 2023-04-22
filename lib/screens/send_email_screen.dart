@@ -3,7 +3,6 @@ import 'package:course_ui_components/widgets/text_field.dart';
 import 'package:flutter/material.dart';
 
 class SendEmailScreen extends StatefulWidget {
-  static const routName = 'home-screen';
   const SendEmailScreen({Key? key}) : super(key: key);
 
   @override
@@ -54,7 +53,14 @@ class _SendEmailScreenState extends State<SendEmailScreen> {
                         controller: msgController,
                         label: "Message",
                       ),
-                      ButtonWidget(onpress: (){},text: "Send Email",ptop:15,pbottom: 15,pleft: screenWidth*0.1,pright: screenWidth*0.1,)
+                      ButtonWidget(
+                        onpress: () {},
+                        text: "Send Email",
+                        ptop: 15,
+                        pbottom: 15,
+                        pleft: screenWidth * 0.1,
+                        pright: screenWidth * 0.1,
+                      )
                     ],
                   ),
                 ),

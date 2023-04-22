@@ -38,6 +38,8 @@ dependencies:
   firebase_auth: ^4.4.2
   awesome_dialog: ^3.0.2
   firebase_core: ^2.10.0
+  introduction_screen: ^3.1.8
+  font_awesome_flutter: ^10.4.0
 
 dev_dependencies:
   flutter_test:
