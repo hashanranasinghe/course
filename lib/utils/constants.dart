@@ -12,3 +12,4 @@ const Color kPrimaryCourseCardColor = Color(0xFFCEECFE);
 const googleIcon = "assets/images/google.png";
 const appIcon = "assets/images/AppLogo.png";
 const user = "assets/images/user.png";
+const vector = "assets/images/vector.png";

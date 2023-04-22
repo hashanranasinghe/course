@@ -1,4 +1,5 @@
 import 'package:course_ui_components/utils/constants.dart';
+import 'package:course_ui_components/utils/navigations.dart';
 import 'package:course_ui_components/widgets/popup_dialog.dart';
 
 import 'package:flutter/material.dart';
@@ -45,11 +46,13 @@ class MenuDrawer extends StatelessWidget {
               elevation: 0,
               child: ListTile(
                 leading: const Icon(
-                  Icons.list_rounded,
+                  Icons.email_outlined,
                   color: kPrimaryButtonColorDark,
                 ),
-                title: const Text('Match schedule'),
-                onTap: () async {},
+                title: const Text('Contact Us'),
+                onTap: () async {
+                  openEmail(context);
+                },
               ),
             ),
             // : Container(),
@@ -57,10 +60,10 @@ class MenuDrawer extends StatelessWidget {
               elevation: 0,
               child: ListTile(
                   leading: const Icon(
-                    Icons.dashboard_customize,
+                    Icons.account_box_outlined,
                     color: kPrimaryButtonColorDark,
                   ),
-                  title: const Text('Custom match schedule'),
+                  title: const Text('About Us'),
                   onTap: () {}),
             ),
             // Card(
