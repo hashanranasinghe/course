@@ -29,7 +29,7 @@ class TextFieldWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 15),
-      child: Container(
+      child: SizedBox(
         width: width,
         child: TextFormField(
           textInputAction: textInputAction,

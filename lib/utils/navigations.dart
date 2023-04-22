@@ -1,6 +1,8 @@
 
+import 'package:course_ui_components/screens/course_screen.dart';
 import 'package:course_ui_components/screens/foget_password_screen.dart';
 import 'package:course_ui_components/screens/home_screen.dart';
+import 'package:course_ui_components/screens/send_email_screen.dart';
 import 'package:course_ui_components/screens/signIn_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -22,4 +24,14 @@ void openForgetPassword(BuildContext context) async {
 void openHome(BuildContext context) async {
   Navigator.push(
       context, MaterialPageRoute(builder: (context) => const HomeScreen()));
+}
+void openCourse(BuildContext context) async {
+  Navigator.push(
+      context, MaterialPageRoute(builder: (context) => const CourseScreen()));
+}
+
+void openEmail(BuildContext context) async {
+  Navigator.push(
+      context, MaterialPageRoute(builder: (context) => const SendEmailScreen(
+  )));
 }

@@ -1,3 +1,4 @@
+import 'package:course_ui_components/utils/navigations.dart';
 import 'package:course_ui_components/widgets/course_card.dart';
 import 'package:course_ui_components/widgets/drawer.dart';
 import 'package:flutter/material.dart';
@@ -44,7 +45,16 @@ class _HomeScreenState extends State<HomeScreen> {
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
-              children: [CourseCard(), CourseCard()],
+              children: [
+                CourseCard(
+                  onPress: () {
+                    openCourse(context);
+                  },
+                ),
+                CourseCard(onPress: () {
+                  openCourse(context);
+                })
+              ],
             ),
           )
         ],
