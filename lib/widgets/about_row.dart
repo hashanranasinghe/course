@@ -36,11 +36,11 @@ class AboutRow extends StatelessWidget {
         ),
         Card(
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(15),
+              borderRadius: BorderRadius.circular(10),
             ),
             elevation: 4,
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: screenWidth*0.02, vertical: screenHeight*0.02),
+              padding: EdgeInsets.symmetric(horizontal: screenWidth*0.02, vertical: screenHeight*0.015),
               child: Row(
                 children: [
                   Align(
@@ -48,7 +48,7 @@ class AboutRow extends StatelessWidget {
                     child: Text(
                       text,
                       style: TextStyle(
-                          fontSize: 15,
+                          fontSize: 12,
                           color: kPrimaryButtonColorDark,
                           fontWeight: FontWeight.w500),
                     ),
