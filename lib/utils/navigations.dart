@@ -3,6 +3,7 @@ import 'package:course_ui_components/screens/course_screen.dart';
 import 'package:course_ui_components/screens/foget_password_screen.dart';
 import 'package:course_ui_components/screens/send_email_screen.dart';
 import 'package:course_ui_components/screens/signIn_screen.dart';
+import 'package:course_ui_components/screens/video_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/signup_screen.dart';
@@ -34,4 +35,8 @@ void openEmail(BuildContext context) async {
   Navigator.push(
       context, MaterialPageRoute(builder: (context) => const SendEmailScreen(
   )));
+}
+void openVideo(BuildContext context) async {
+  Navigator.push(
+      context, MaterialPageRoute(builder: (context) => VideoScreen()));
 }

@@ -38,7 +38,7 @@ class OnBoardingPage extends StatelessWidget {
             footer: Padding(
               padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.1),
               child: ButtonWidget(
-                text: 'Start Reading',
+                text: 'Start Learning',
                 onpress: () => openSignIn(context),
               ),
             ),
@@ -85,8 +85,8 @@ class OnBoardingPage extends StatelessWidget {
       );
 
   PageDecoration getPageDecoration() => PageDecoration(
-        titleTextStyle: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
-        bodyTextStyle: TextStyle(fontSize: 20),
+        titleTextStyle: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+        bodyTextStyle: TextStyle(fontSize: 18),
         imagePadding: EdgeInsets.all(24),
         pageColor: Colors.white,
       );

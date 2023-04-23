@@ -1,4 +1,5 @@
 import 'package:course_ui_components/utils/constants.dart';
+import 'package:course_ui_components/utils/navigations.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/video_play_card.dart';
@@ -119,7 +120,9 @@ class _CourseScreenState extends State<CourseScreen> {
                         videoLength: "6:10",
                         isWatched: true,
                         videoNumber: "01",
-                        onPress: () {},
+                        onPress: () {
+                          openVideo(context);
+                        },
                       ),
                       VideoPlayCard(
                         videoNumber: "02",

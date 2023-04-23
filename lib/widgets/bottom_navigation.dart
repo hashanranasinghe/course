@@ -1,3 +1,4 @@
+import 'package:course_ui_components/screens/account_screen.dart';
 import 'package:course_ui_components/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -13,9 +14,9 @@ class BottomNavBar extends StatefulWidget {
 }
 
 class _BottomNavBarState extends State<BottomNavBar> {
-  int _currentIndex = 2;
+  int _currentIndex = 0;
 
-  final List<Widget> _screens = [HomeScreen(), HomeScreen(), HomeScreen()];
+  final List<Widget> _screens = [HomeScreen(), HomeScreen(), AccountScreen()];
 
   bool isSelected = false;
 
@@ -28,6 +29,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
           Align(
             alignment: Alignment.bottomCenter,
             child: BottomNavigationBar(
+              selectedFontSize: 12,
+              unselectedFontSize: 10,
               selectedIconTheme: IconThemeData(color: kPrimaryButtonColorDark),
               type: BottomNavigationBarType.fixed,
               backgroundColor: Colors.white,
@@ -47,8 +50,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
                   label: 'World',
                 ),
                 BottomNavigationBarItem(
-                  icon: FaIcon(FontAwesomeIcons.faceLaugh),
-                  label: 'Profile',
+                  icon: FaIcon(FontAwesomeIcons.user),
+                  label: 'Account',
                 ),
               ],
             ),

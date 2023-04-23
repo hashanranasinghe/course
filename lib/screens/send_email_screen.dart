@@ -1,3 +1,4 @@
+import 'package:course_ui_components/widgets/bottom_navigation.dart';
 import 'package:course_ui_components/widgets/button_field.dart';
 import 'package:course_ui_components/widgets/text_field.dart';
 import 'package:flutter/material.dart';
@@ -19,6 +20,17 @@ class _SendEmailScreenState extends State<SendEmailScreen> {
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: Text("Contact Us",style: TextStyle(
+          color: Colors.black
+        ),),
+        centerTitle: true,
+        iconTheme: IconThemeData(
+          color: Colors.black
+        ),
+      ),
       body: SingleChildScrollView(
         child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
