@@ -29,71 +29,65 @@ class _AboutScreenState extends State<AboutScreen> {
           style: TextStyle(color: Colors.black),
         ),
       ),
-      body: Column(
-        children: [
-          Column(
-            children: [
-              Align(
-                  alignment: Alignment.topCenter,
-                  child: Column(
-                    children: [
-                      CircleAvatar(
-                        backgroundImage: AssetImage(appIcon),
-                        backgroundColor: Colors.transparent,
-                        radius: 40.0,
-                      ),
-                      Lottie.asset(aboutAnim),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Text(
-                          des,
-                          style: TextStyle(
-                            fontSize: 12,
-                            color: kSecondaryTextColorDark,
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      )
-                    ],
-                  )),
-              SizedBox(
-                height: screenHeight * 0.01,
-              ),
-              Center(
-                child: Column(
-                  children: [],
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.06),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Align(
+                alignment: Alignment.topCenter,
                 child: Column(
                   children: [
-                    AboutRow(
-                        text: "Hashan Ranasinghe",
-                        topicIcon: FaIcon(FontAwesomeIcons.userPen).icon,
-                        topic: "Name"),
-                    SizedBox(
-                      height: screenHeight * 0.01,
-                    ),
-                    Divider(),
-                    AboutRow(
-                        text: "Januxacademy98@gmail.com",
-                        topicIcon: FaIcon(FontAwesomeIcons.envelope).icon,
-                        topic: "E-mail"),
-                    SizedBox(
-                      height: screenHeight * 0.01,
-                    ),
-                    Divider(),
-                    AboutRow(
-                        text: "0123456789",
-                        topicIcon: FaIcon(FontAwesomeIcons.phone).icon,
-                        topic: "Phone Number"),
+                    Lottie.asset(aboutAnim),
+                    Image.asset(appIcon,scale: 5,),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: screenWidth*0.05,vertical: screenHeight*0.01),
+                      child: Text(
+                        des,
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: kSecondaryTextColorDark,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    )
                   ],
-                ),
-              )
-            ],
-          )
-        ],
+                )),
+            SizedBox(
+              height: screenHeight * 0.01,
+            ),
+            Center(
+              child: Column(
+                children: [],
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.06),
+              child: Column(
+                children: [
+                  AboutRow(
+                      text: "Januxacademy98@gmail.com",
+                      topicIcon: FaIcon(FontAwesomeIcons.envelope).icon,
+                      topic: "E-mail"),
+                  SizedBox(
+                    height: screenHeight * 0.01,
+                  ),
+                  Divider(),
+                  AboutRow(
+                      text: "0123456789",
+                      topicIcon: FaIcon(FontAwesomeIcons.phone).icon,
+                      topic: "Phone Number"),
+                  SizedBox(
+                    height: screenHeight * 0.01,
+                  ),
+                  Divider(),
+                  AboutRow(
+                      text: "0123456789",
+                      topicIcon: FaIcon(FontAwesomeIcons.whatsapp).icon,
+                      topic: "WhatsApp"),
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
