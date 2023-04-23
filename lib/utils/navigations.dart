@@ -1,5 +1,7 @@
 
+import 'package:course_ui_components/screens/about_screen.dart';
 import 'package:course_ui_components/screens/course_screen.dart';
+import 'package:course_ui_components/screens/faq_screen.dart';
 import 'package:course_ui_components/screens/foget_password_screen.dart';
 import 'package:course_ui_components/screens/send_email_screen.dart';
 import 'package:course_ui_components/screens/signIn_screen.dart';
@@ -39,4 +41,14 @@ void openEmail(BuildContext context) async {
 void openVideo(BuildContext context) async {
   Navigator.push(
       context, MaterialPageRoute(builder: (context) => VideoScreen()));
+}
+
+void openAbout(BuildContext context) async {
+  Navigator.push(
+      context, MaterialPageRoute(builder: (context) => AboutScreen()));
+}
+
+void openFaq(BuildContext context) async {
+  Navigator.push(
+      context, MaterialPageRoute(builder: (context) => FaqScreen()));
 }

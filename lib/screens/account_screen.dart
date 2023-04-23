@@ -72,14 +72,10 @@ class _AccountScreenState extends State<AccountScreen> {
                         child: Column(
                           children: [
                             AccountListTile(
-                                title: "Contact Us",
-                                onPress: () {
-                                  openEmail(context);
-                                },
-                                icon: FaIcon(FontAwesomeIcons.envelope).icon),
-                            AccountListTile(
                                 title: "About Us",
-                                onPress: () {},
+                                onPress: () {
+                                  openAbout(context);
+                                },
                                 icon:
                                     FaIcon(FontAwesomeIcons.addressBook).icon),
                             AccountListTile(
@@ -119,7 +115,9 @@ class _AccountScreenState extends State<AccountScreen> {
                           children: [
                             AccountListTile(
                                 title: "FAQ",
-                                onPress: () {},
+                                onPress: () {
+                                  openFaq(context);
+                                },
                                 icon: FaIcon(FontAwesomeIcons.question).icon),
                             AccountListTile(
                                 title: "About App",
