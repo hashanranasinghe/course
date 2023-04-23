@@ -38,15 +38,15 @@ class _HomeScreenState extends State<HomeScreen> {
                         Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: EdgeInsets.symmetric(horizontal: screenWidth*0.05),
+                            padding: EdgeInsets.symmetric(
+                                horizontal: screenWidth * 0.05),
                             child: AnimatedTextKit(
                               animatedTexts: [
-                                WavyAnimatedText('Do you want to be a trader?',textStyle: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 15
-                                )),
-
+                                WavyAnimatedText('Do you want to be a trader?',
+                                    textStyle: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 15)),
                               ],
                               isRepeatingAnimation: true,
                               onTap: () {
