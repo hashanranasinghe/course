@@ -17,11 +17,15 @@ class _YoutubeCardState extends State<YoutubeCard> {
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
     return Padding(
-      padding: const EdgeInsets.only(left: 15, right: 15, top: 15),
+      padding: EdgeInsets.only(
+          left: screenWidth * 0.04, right: screenWidth * 0.04, top: 0.03),
       child: Stack(children: [
         Card(
           elevation: 10,
-          margin: EdgeInsets.only(top: 48, left: 15, right: 15),
+          margin: EdgeInsets.only(
+              top: screenHeight * 0.06,
+              left: screenWidth * 0.04,
+              right: screenWidth * 0.04),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(25),
           ),
