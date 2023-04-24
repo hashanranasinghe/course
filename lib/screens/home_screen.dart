@@ -1,6 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:course_ui_components/utils/navigations.dart';
 import 'package:course_ui_components/widgets/course_card.dart';
+import 'package:course_ui_components/widgets/update_dialog.dart';
 import 'package:course_ui_components/widgets/yt_card.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -88,7 +89,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       image: binance,
                       btnTitle: "Get Started",
                       onPress: () {
-                        openCourse(context);
+                        showDialog(context: context, builder: (context){
+                          return UpdateDialog();
+                        });
                       },
                       title: "Free Course",
                     ),
