@@ -43,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             child: AnimatedTextKit(
                               animatedTexts: [
                                 WavyAnimatedText('Do you want to be a trader?',
-                                    textStyle: TextStyle(
+                                    textStyle: const TextStyle(
                                         color: Colors.white,
                                         fontWeight: FontWeight.w500,
                                         fontSize: 15)),
