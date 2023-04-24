@@ -15,8 +15,14 @@ const appIcon = "assets/images/AppLogo.png";
 const user = "assets/images/user.png";
 const vector = "assets/images/vector.png";
 const binance = "assets/images/binance.png";
+const yt = "assets/images/youtube.png";
+const fb = "assets/images/facebook.png";
+const whatsapp = "assets/images/whatsapp.png";
+const ytLogo = "assets/images/ytLogo.jpg";
 const aboutAnim = "assets/json/about.json";
 const faqAnim = "assets/json/faq.json";
+const connectAnim = "assets/json/connect.json";
+
 
 
 
